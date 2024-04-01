@@ -52,7 +52,4 @@ Contributions to WheelSmith are welcome! If you encounter any issues or have sug
 
 ## License
 
-WheelSmith is released under the [MIT License](LICENSE).
-
-Citations:
-[1] https://pplx-res.cloudinary.com/image/upload/v1711985011/user_uploads/zmcodswgh/image.jpg
+WheelSmith is released under the [MIT License](https://opensource.org/license/mit).

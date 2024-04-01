@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: wheelsmith
-Version: 0.1.0
+Version: 0.1.1
 Summary: A utility tool for building and publishing Python packages to PyPI
 Home-page: UNKNOWN
 Author: Your Name
@@ -8,6 +8,61 @@ Author-email: your.email@example.com
 License: UNKNOWN
 Description: 
         # WheelSmith
+        
+        WheelSmith is a command-line utility tool designed to simplify the process of building and publishing Python packages to the Python Package Index (PyPI). It combines the steps of creating source distributions, building wheels, and uploading the package to PyPI into a single command, making it easier for developers to distribute their Python projects. With WheelSmith, you can save countless clicks and make publishing to PyPI easier than ever before, with just a single stroke.
+        
+        ## Features
+        
+        - **Single Command Publishing**: With WheelSmith, you can build and publish your Python package to PyPI with just one command, eliminating the need to run multiple steps manually.
+        - **Secure API Token Handling**: WheelSmith prompts you to enter your PyPI API token securely using the `getpass` module, ensuring that your credentials are not exposed in plain text.
+        - **Progress Monitoring**: WheelSmith utilizes the `tqdm` library to display progress bars during the build and upload processes, providing visual feedback on the operation's status.
+        - **Rich Output**: The tool leverages the `rich` library to display colorful and formatted output, making it easier to distinguish between different stages of the publishing process.
+        - **Error Handling**: WheelSmith gracefully handles errors that may occur during the build or upload processes, displaying clear error messages in a user-friendly manner.
+        
+        ## Installation
+        
+        You can install WheelSmith using pip:
+        
+        ```bash
+        pip install wheelsmith
+        ```
+        
+        Alternatively, you can clone the GitHub repository and install WheelSmith locally:
+        
+        ```bash
+        git clone https://github.com/thtskaran/wheelsmith.git
+        cd wheelsmith
+        pip install -e .
+        ```
+        
+        ## Usage
+        
+        1. Navigate to the root directory of your Python package.
+        2. Run the following command:
+        
+        ```bash
+        wheelsmith
+        ```
+        
+        If WheelSmith hasn't been added to your system's PATH, you might need to use the following command while being in the project directory:
+        
+        ```bash
+        python -m wheelsmith
+        ```
+        
+        3. When prompted, enter your PyPI API token.
+        4. WheelSmith will build the package by running `python setup.py sdist bdist_wheel`.
+        5. After the build is successful, WheelSmith will upload the package to PyPI using `twine upload`.
+        6. Progress bars and status messages will be displayed throughout the process.
+        
+        ## Contributing
+        
+        Contributions to WheelSmith are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request on the project's GitHub repository.
+        
+        ## License
+        
+        WheelSmith is released under the [MIT License](https://opensource.org/license/mit).
+        
 Keywords: python,packaging,pypi,wheels,publishing
 Platform: UNKNOWN
 Classifier: Development Status :: 4 - Beta

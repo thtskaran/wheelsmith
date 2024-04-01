@@ -7,7 +7,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.1.0'
+VERSION = '0.1.01'
 DESCRIPTION = 'A utility tool for building and publishing Python packages to PyPI'
 LONG_DESCRIPTION = 'WheelSmith is a command-line tool that simplifies the process of building and publishing Python packages to the Python Package Index (PyPI). It combines the steps of building wheels and uploading them to PyPI into a single command, making it easier for developers to distribute their packages.'
 

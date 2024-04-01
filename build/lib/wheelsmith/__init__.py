@@ -1,0 +1,1 @@
+from .wheelsmith import main

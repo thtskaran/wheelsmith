@@ -1,0 +1,3 @@
+[console_scripts]
+wheelsmith = wheelsmith.main:build_and_publish
+

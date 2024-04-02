@@ -52,4 +52,4 @@ Contributions to WheelSmith are welcome! If you encounter any issues or have sug
 
 ## License
 
-WheelSmith is released under the [MIT License](https://opensource.org/license/mit).
+WheelSmith is released under the [APACHE LICENSE 2.0](LICENSE).
